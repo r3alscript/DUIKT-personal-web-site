@@ -1,0 +1,292 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap);
+body {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+  }
+
+  .keyboard-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d23a6e;
+    padding: 15px;
+    border-radius: 15px;
+    max-width: 1050px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .media-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 2px 0;
+    border-bottom: 2px solid #b7fdfe;
+  }
+
+  .media-section img {
+    content: url(https://cdn.iconscout.com/icon/free/png-256/free-logitech-logo-icon-download-in-svg-png-gif-file-formats--brand-brands-and-logos-pack-icons-2673863.png);
+    filter: invert(1);
+    width: 75px;
+    height: 63px;
+    padding-bottom: 5px;
+  }
+
+  .media-buttons-left {
+    margin-bottom: 10px;
+    display: flex;
+    padding-left: 17px;
+    gap: 14px;
+  }
+
+  .media-buttons-right {
+    margin-bottom: 10px;
+    display: flex;
+    padding-right: 217px;
+    gap: 14px;
+  }
+
+  .media-button {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    background-color: #b7094c;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .media-button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .indicator-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #f0f0f0;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 5px;
+    padding-left: 104px;
+  }
+
+  .indicator-item {
+    font-size: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .indicator-light {
+    width: 7px;
+    height: 7px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    margin-top: 5px;
+  }
+
+  .indicator-light.active {
+    background-color: red;
+    box-shadow: 0 0 8px 4px rgba(255, 0, 0, 0.4),
+      0 0 16px 8px rgba(255, 0, 0, 0.2), 0 0 24px 12px rgba(255, 0, 0, 0.1);
+  }
+
+  .keyboard-container {
+    display: grid;
+    grid-template-columns: repeat(37, 1fr);
+    gap: 6px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #d23a6e;
+  }
+
+  .key {
+    height: 50px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #b7fdfe;
+    background-color: #e05187;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    grid-column: span 2;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.1s;
+  }
+
+  .key_b {
+    height: 50px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #b7fdfe;
+    background-color: #e05187;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    grid-column: span 2;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.1s;
+  }
+
+  .key_b:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  @keyframes rainbow-text {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+
+  .key,
+  .key_b,
+  .media-button {
+    color: transparent;
+    background: linear-gradient(
+      90deg,
+      #ff0000,
+      #ff3300,
+      #ff6600,
+      #ff9900,
+      #ffcc00,
+      #ffff00,
+      #ccff00,
+      #99ff00,
+      #66ff00,
+      #33ff00,
+      #00ff00,
+      #00ff33,
+      #00ff66,
+      #00ff99,
+      #00ffcc,
+      #00ffff,
+      #00ccff,
+      #0099ff,
+      #0066ff,
+      #0033ff,
+      #0000ff,
+      #3300ff,
+      #6600ff,
+      #9900ff,
+      #cc00ff,
+      #ff00ff,
+      #ff00cc,
+      #ff0099,
+      #ff0066,
+      #ff0033,
+      #ff0000
+    );
+    background-size: 400%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: rainbow-text 10s infinite linear;
+  }
+
+  .key_05 {
+    grid-column: span 1;
+    height: 50px;
+    font-size: 1.1rem;
+    background-color: #d23a6e;
+    border: none;
+  }
+
+  .key_0 {
+    grid-column: span 2;
+    height: 50px;
+    font-size: 1.1rem;
+    background-color: #d23a6e;
+    border: none;
+  }
+
+  .key_en {
+    grid-column: span 2;
+    height: 20px;
+    font-size: 1.1rem;
+    background-color: #d23a6e;
+    border: none;
+    align-self: start;
+  }
+
+  .key:active {
+    transform: scale(0.95);
+    background-color: #b7094c;
+  }
+
+  .key.backspace {
+    grid-column: span 4;
+    font-size: 1.7rem;
+  }
+
+  .key.tab {
+    grid-column: span 3;
+  }
+
+  .key.enter {
+    grid-column: span 3;
+    height: 110px;
+    grid-row: span 2;
+    grid-column: 28/ 31;
+    font-size: 1.7rem;
+  }
+
+  .key.caps {
+    grid-column: span 4;
+  }
+
+  .key.shift-left {
+    grid-column: span 5;
+  }
+
+  .key.shift-right {
+    grid-column: span 5;
+  }
+
+  .key.space {
+    grid-column: span 16;
+    font-size: 1.5rem;
+  }
+
+  .key.altgr {
+    grid-column: span 2;
+    font-size: 0.85rem;
+  }
+
+  .key.fn {
+    grid-column: span 2;
+  }
+
+  .key.ctrl {
+    font-size: 0.9rem;
+  }
+
+  .key.arrow-left,
+  .key.arrow-down,
+  .key.arrow-right,
+  .key.arrow-up {
+    grid-column: span 2;
+    font-size: 1.2rem;
+  }

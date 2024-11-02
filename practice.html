@@ -1,54 +1,79 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Практичні роботи</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <nav>
-        <ul>
-            <li><a href="index.html" class="nav-btn">Головна</a></li>
-            <li><span class="arrow">&#x276F;</span></li>
-            <li><a href="about.html" class="nav-btn">Про мене</a></li>
-            <li><span class="arrow">&#x276F;</span></li>
-            <li><a href="practice.html" class="nav-btn">Практичні роботи</a></li>
-            <li><span class="arrow">&#x276F;</span></li>
-            <li><a href="lab.html" class="nav-btn">Лабораторні заняття</a></li>
-        </ul>
-    </nav>    
+      <ul>
+        <li><a href="index.html" class="nav-btn">Головна</a></li>
+        <li><span class="arrow">&#x276F;</span></li>
+        <li><a href="about.html" class="nav-btn">Про мене</a></li>
+        <li><span class="arrow">&#x276F;</span></li>
+        <li><a href="practice.html" class="nav-btn">Практичні роботи</a></li>
+        <li><span class="arrow">&#x276F;</span></li>
+        <li><a href="lab.html" class="nav-btn">Лабораторні заняття</a></li>
+      </ul>
+    </nav>
 
     <div class="container">
-        <section id="practical">
-            <div class="text-container">
-                <h2>Практична робота №1</h2>
-                <p>Таблиця з розкладом занять на місяць</p>
-                <a href="prac1.html" class="section-btn">Переглянути роботу</a>
-            </div>
-            <img src="12.png" alt="Зображення розкладу">
-        </section>
+      <section id="practical">
+        <div class="text-container">
+          <h2>Практична робота №1</h2>
+          <p>Таблиця з розкладом занять на місяць</p>
+          <a href="prac1.html" class="section-btn">Переглянути роботу</a>
+        </div>
+        <img src="12.png" alt="Зображення розкладу" />
+      </section>
+    </div>
+
+    <div class="container">
+      <section id="practical">
+        <div class="text-container">
+          <h2>Практична робота №4</h2>
+          <p>Logitech G PRO X TKL Lightspeed Magenta</p>
+          <a href="/prak4/keyboard.html" class="section-btn"
+            >Переглянути роботу</a
+          >
+        </div>
+        <img src="/prak4/41.png" alt="Зображення розкладу" />
+      </section>
     </div>
 
     <footer>
-        <p>
-            <a href="#" onclick="copyToClipboard('denisruzhynski3@gmail.com')"><i class='bx bx-envelope'></i></a> <a href="#" onclick="copyToClipboard('denisruzhynski3@gmail.com')">denisruzhynski3@gmail.com</a> |
-            <a href="https://github.com/r3alscript" target="_blank"><i class='bx bxl-github'></i>GitHub профіль</a> |
-            <i class='bx bx-calendar'></i> Роки навчання: 2023-2027
-        </p>
+      <p>
+        <a href="#" onclick="copyToClipboard('denisruzhynski3@gmail.com')"
+          ><i class="bx bx-envelope"></i
+        ></a>
+        <a href="#" onclick="copyToClipboard('denisruzhynski3@gmail.com')"
+          >denisruzhynski3@gmail.com</a
+        >
+        |
+        <a href="https://github.com/r3alscript" target="_blank"
+          ><i class="bx bxl-github"></i>GitHub профіль</a
+        >
+        | <i class="bx bx-calendar"></i> Роки навчання: 2023-2027
+      </p>
     </footer>
 
     <script>
-        function copyToClipboard(text) {
-            navigator.clipboard.writeText(text).then(() => {
-                alert('Електронна адреса скопійована до буфера обміну!');
-            }).catch(err => {
-                console.error('Помилка копіювання: ', err);
-            });
-        }
+      function copyToClipboard(text) {
+        navigator.clipboard
+          .writeText(text)
+          .then(() => {
+            alert("Електронна адреса скопійована до буфера обміну!");
+          })
+          .catch((err) => {
+            console.error("Помилка копіювання: ", err);
+          });
+      }
     </script>
-
-</body>
+  </body>
 </html>

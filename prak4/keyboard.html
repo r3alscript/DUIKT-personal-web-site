@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logitech G PRO X TKL Lightspeed Magenta</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="keyboardstyle.css" />
+  </head>
+  <body>
+    <div class="keyboard-wrapper">
+      <div class="media-section">
+        <img
+          src="https://cdn.iconscout.com/icon/free/png-256/free-logitech-logo-icon-download-in-svg-png-gif-file-formats--brand-brands-and-logos-pack-icons-2673863.png"
+          alt=""
+        />
+        <div class="media-buttons-left">
+          <div class="media-button" data-media="wifi">
+            <i class="fa-solid fa-wifi"></i>
+          </div>
+          <div class="media-button" data-media="bluetooth">
+            <i class="fa-brands fa-bluetooth-b"></i>
+          </div>
+          <div class="media-button" data-media="gamepad">
+            <i class="fa-solid fa-gamepad"></i>
+          </div>
+          <div class="media-button" data-media="sun">
+            <i class="fa-regular fa-sun"></i>
+          </div>
+        </div>
+        <div class="indicator-section">
+          <div class="indicator-item">
+            <div>CAPS LOCK</div>
+            <div class="indicator-light" id="caps-indicator"></div>
+          </div>
+          <div class="indicator-item">
+            <div>BATTERY</div>
+            <div class="indicator-light"></div>
+          </div>
+        </div>
+        <div class="media-buttons-right">
+          <div class="media-button" data-media="backward">
+            <i class="fa-solid fa-backward-fast"></i>
+          </div>
+          <div class="media-button" data-media="forward">
+            <i class="fa-solid fa-forward"></i>
+          </div>
+          <div class="media-button" data-media="fast-forward">
+            <i class="fa-solid fa-forward-fast"></i>
+          </div>
+          <div class="media-button" data-media="mute">
+            <i class="fa-solid fa-volume-xmark"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="keyboard-container">
+        <button class="key esc">ESC</button>
+        <button class="key_0"></button>
+        <button class="key">F1</button>
+        <button class="key">F2</button>
+        <button class="key">F3</button>
+        <button class="key">F4</button>
+        <button class="key_05"></button>
+        <button class="key">F5</button>
+        <button class="key">F6</button>
+        <button class="key">F7</button>
+        <button class="key">F8</button>
+        <button class="key_05"></button>
+        <button class="key">F9</button>
+        <button class="key">F10</button>
+        <button class="key">F11</button>
+        <button class="key">F12</button>
+        <button class="key_05"></button>
+        <button class="key_b">PRNT</button>
+        <button class="key_b">LOCK</button>
+        <button class="key_b">P/B</button>
+
+        <button class="key_en"></button>
+        <button class="key_en"></button>
+        <button class="key_en"></button>
+        <button class="key_en"></button>
+        <button class="key_en"></button>
+        <button class="key_en"></button>
+        <button class="key_en"></button>
+        <button class="key_en"></button>
+        <button class="key_en"></button>
+        <button class="key_en"></button>
+        <button class="key_en"></button>
+        <button class="key_en"></button>
+        <button class="key_en"></button>
+        <button class="key_en"></button>
+        <button class="key_en"></button>
+        <button class="key_en"></button>
+        <button class="key_en"></button>
+        <button class="key_en"></button>
+
+        <button class="key">~</button>
+        <button class="key">1</button>
+        <button class="key">2</button>
+        <button class="key">3</button>
+        <button class="key">4</button>
+        <button class="key">5</button>
+        <button class="key">6</button>
+        <button class="key">7</button>
+        <button class="key">8</button>
+        <button class="key">9</button>
+        <button class="key">0</button>
+        <button class="key">-</button>
+        <button class="key">=</button>
+        <button class="key backspace">←</button>
+        <button class="key_05"></button>
+        <button class="key_b">INS</button>
+        <button class="key_b">HOME</button>
+        <button class="key_b">PG<i class="fa-solid fa-caret-up"></i></button>
+
+        <button class="key tab">TAB</button>
+        <button class="key">Q</button>
+        <button class="key">W</button>
+        <button class="key">E</button>
+        <button class="key">R</button>
+        <button class="key">T</button>
+        <button class="key">Y</button>
+        <button class="key">U</button>
+        <button class="key">I</button>
+        <button class="key">O</button>
+        <button class="key">P</button>
+        <button class="key">[</button>
+        <button class="key">]</button>
+        <button class="key enter">↵</button>
+        <button class="key_05"></button>
+        <button class="key_b">DEL</button>
+        <button class="key_b">END</button>
+        <button class="key_b">PG<i class="fa-solid fa-caret-down"></i></button>
+
+        <button class="key caps" id="caps-button">CAPS</button>
+        <button class="key">A</button>
+        <button class="key">S</button>
+        <button class="key">D</button>
+        <button class="key">F</button>
+        <button class="key">G</button>
+        <button class="key">H</button>
+        <button class="key">J</button>
+        <button class="key">K</button>
+        <button class="key">L</button>
+        <button class="key">;</button>
+        <button class="key">'</button>
+        <button class="key_0"></button>
+        <button class="key_0"></button>
+        <button class="key_0"></button>
+
+        <button class="key shift-left">SHIFT</button>
+        <button class="key">Z</button>
+        <button class="key">X</button>
+        <button class="key">C</button>
+        <button class="key">V</button>
+        <button class="key">B</button>
+        <button class="key">N</button>
+        <button class="key">M</button>
+        <button class="key">,</button>
+        <button class="key">.</button>
+        <button class="key">/</button>
+        <button class="key shift-right">SHIFT</button>
+        <button class="key_05"></button>
+        <button class="key_0"></button>
+        <button class="key arrow-up">
+          <i class="fa-solid fa-caret-up"></i>
+        </button>
+        <button class="key_0"></button>
+
+        <button class="key ctrl">CTRL</button>
+        <button class="key win"><i class="fa-brands fa-windows"></i></button>
+        <button class="key alt">ALT</button>
+        <button class="key space">—</button>
+        <button class="key fn">FN</button>
+        <button class="key altgr">ALT GR</button>
+        <button class="key menu"><i class="fa-solid fa-bars"></i></button>
+        <button class="key ctrl">CTRL</button>
+        <button class="key_05"></button>
+        <button class="key arrow-left">
+          <i class="fa-solid fa-caret-left"></i>
+        </button>
+        <button class="key arrow-down">
+          <i class="fa-solid fa-caret-down"></i>
+        </button>
+        <button class="key arrow-right">
+          <i class="fa-solid fa-caret-right"></i>
+        </button>
+      </div>
+    </div>
+  </body>
+  <script>
+    document
+      .getElementById("caps-button")
+      .addEventListener("click", function () {
+        const capsIndicator = document.getElementById("caps-indicator");
+        capsIndicator.classList.toggle("active");
+      });
+  </script>
+</html>
