@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Heebo", sans-serif;
+  }
+
+  .p {
+    min-width: 300px;
+    font: 1.5em sans-serif;
+    padding: 115px;
+    margin-top: -200px;
+  }
+
+  .profile-pic img {
+    margin-right: 115px;
+    margin-top: 100px;
+    border-radius: 50%;
+  }
+
+  body {
+    background-color: #edf7fa;
+    color: #333;
+  }
+
+  header {
+    background-color: #ffffff;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  .nav-links li {
+    position: relative;
+    font-size: 20px;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    padding-bottom: 10px;
+  }
+
+  .nav-links li::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    bottom: 0;
+    left: 0;
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #ffffff;
+    margin-top: -50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 700px;
+  }
+
+  .hero-content {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .text h1 {
+    font-size: 44px;
+    margin-top: 50px;
+    padding: 115px;
+  }
+
+  .resume-btn {
+    background-color: #ff5a5f;
+    color: #fff;
+    font: 1.5em sans-serif;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    font-weight: bold;
+    margin-top: -500px;
+    margin-left: 115px;
+  }
+
+  .recent-posts {
+    padding: 1rem;
+    color: #333;
+    margin: 1rem 0;
+  }
+
+  .featured-works {
+    margin-top: -70px;
+    padding: 125px;
+    background-color: #ffffff;
+    margin: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px;
+    margin-bottom: 1rem;
+    margin-top: -120px;
+  }
+
+  .section-header h2,
+  .featured-works h2 {
+    font-size: 1.5rem;
+  }
+
+  .posts {
+    display: flex;
+    gap: 2rem;
+    margin-top: -140px;
+    padding: 120px;
+  }
+
+  .post {
+    background-color: #f9f9f9;
+    margin-top: -20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    width: 80%;
+    height: 350px;
+    padding: 50px;
+    font-size: 16px;
+  }
+
+  .post h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .date {
+    color: #777;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .work {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    height: 200px;
+    align-items: center;
+  }
+
+  .work-thumbnail img {
+    width: 246px;
+    height: 180px;
+    border-radius: 6px;
+    object-fit: cover;
+  }
+
+  .work-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .work-info h3 {
+    font-size: 26px;
+    margin-bottom: 0.5rem;
+  }
+
+  .work-info .year,
+  .work-info .category {
+    font-size: 1rem;
+    color: #777;
+    margin-right: 0.5rem;
+  }
+
+  footer {
+    padding: 1rem;
+    margin-top: -100px;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .social-links a i {
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    line-height: 30px;
+    text-align: center;
+    color: #333;
+  }
+
+  .social-links a {
+    display: inline-block;
+    margin: 5px;
+  }
+
+  .year-badge {
+    display: inline-block;
+    width: 62px;
+    height: 25px;
+    background-color: #142850;
+    color: #fff;
+    border-radius: 16px;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 25px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+
+  .category {
+    color: #8695a4;
+  }
+
+.info-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
