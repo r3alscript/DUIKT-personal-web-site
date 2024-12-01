@@ -1,0 +1,13 @@
+{
+    "name": "new-year-card",
+    "version": "1.0.0",
+    "description": "New Year Greeting Card with BEM and SCSS",
+    "scripts": {
+      "build-scss": "node-sass styles.scss styles.css",
+      "watch-scss": "node-sass styles.scss styles.css --watch"
+    },
+    "devDependencies": {
+      "node-sass": "^7.0.0"
+    }
+  }
+  
